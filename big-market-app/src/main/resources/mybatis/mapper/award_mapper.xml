@@ -14,7 +14,7 @@
 
 
     <select id="queryAwardList" resultMap="dataMap">
-        SELECT award_id,award_key,award_config,award_desc
+        SELECT id,award_id,award_key,award_config,award_desc
         FROM award
         limit 10
     </select>

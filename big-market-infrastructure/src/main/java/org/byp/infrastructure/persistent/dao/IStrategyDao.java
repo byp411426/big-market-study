@@ -1,6 +1,9 @@
 package org.byp.infrastructure.persistent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.byp.infrastructure.persistent.po.Strategy;
+
+import java.util.List;
 
 /**
  * @ClassName IStrategyDao
@@ -10,4 +13,5 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface IStrategyDao {
+    List<Strategy> queryStrategyList();
 }
