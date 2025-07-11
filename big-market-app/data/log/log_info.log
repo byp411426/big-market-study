@@ -1,415 +1,546 @@
-25-07-02.22:08:38.606 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 36764 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-02.22:08:38.607 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-25-07-02.22:08:40.180 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 1.903 seconds (JVM running for 2.68)
-25-07-02.22:08:40.577 [main            ] INFO  AwardDaoTest           - 测试奖品持久化
-25-07-02.22:12:05.696 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 41216 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-02.22:12:05.696 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-25-07-02.22:12:07.060 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 1.639 seconds (JVM running for 2.195)
-25-07-02.22:12:07.440 [main            ] INFO  AwardDaoTest           - 测试奖品持久化
-25-07-02.22:19:50.192 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 36620 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-02.22:19:50.193 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-25-07-02.22:19:51.589 [main            ] INFO  AwardDaoTest           - Started AwardDaoTest in 1.68 seconds (JVM running for 2.21)
-25-07-02.22:19:51.898 [main            ] INFO  AwardDaoTest           - 测试奖品持久化
-25-07-02.22:19:51.913 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-07-02.22:19:52.197 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-07-02.22:19:52.314 [main            ] INFO  AwardDaoTest           - 测试奖品持久化结果：[{"awardConfig":"1,100","awardDesc":"用户积分【优先透彻规则范围，如果没有则走配置】","awardId":101,"awardKey":"user_credit_random"},{"awardConfig":"5","awardDesc":"OpenAI 增加使用次数","awardId":102,"awardKey":"openai_use_count"},{"awardConfig":"10","awardDesc":"OpenAI 增加使用次数","awardId":103,"awardKey":"openai_use_count"},{"awardConfig":"20","awardDesc":"OpenAI 增加使用次数","awardId":104,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4","awardDesc":"OpenAI 增加模型","awardId":105,"awardKey":"openai_model"},{"awardConfig":"dall-e-2","awardDesc":"OpenAI 增加模型","awardId":106,"awardKey":"openai_model"},{"awardConfig":"dall-e-3","awardDesc":"OpenAI 增加模型","awardId":107,"awardKey":"openai_model"},{"awardConfig":"100","awardDesc":"OpenAI 增加使用次数","awardId":108,"awardKey":"openai_use_count"},{"awardConfig":"gpt-4,dall-e-2,dall-e-3","awardDesc":"OpenAI 增加模型","awardId":109,"awardKey":"openai_model"},{"awardConfig":"1","awardDesc":"黑名单积分","awardId":100,"awardKey":"user_credit_blacklist"}]
-25-07-02.22:19:52.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-07-02.22:19:52.326 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-07-03.21:23:31.346 [main            ] INFO  AwardDaoTest           - Starting AwardDaoTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 16700 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-03.21:23:31.347 [main            ] INFO  AwardDaoTest           - The following 1 profile is active: "dev"
-25-07-03.21:23:32.619 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-25-07-03.21:23:32.624 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-25-07-03.21:23:32.638 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 45 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6.CGLIB$sqlSessionFactory$0(<generated>)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6$$FastClassBySpringCGLIB$$99caf7bc.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6.sqlSessionFactory(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 46 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
-	... 59 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
-	... 61 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 65 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 67 common frames omitted
-25-07-03.21:23:32.639 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@673fdbce] to prepare test instance [org.byp.test.infrastructure.AwardDaoTest@319642db]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	... 27 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 45 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6.CGLIB$sqlSessionFactory$0(<generated>)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6$$FastClassBySpringCGLIB$$99caf7bc.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$26250cb6.sqlSessionFactory(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 46 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
-	... 59 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
-	... 61 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 65 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 67 common frames omitted
-25-07-03.21:25:27.015 [main            ] INFO  StrategyAwardTest      - Starting StrategyAwardTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 24812 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-03.21:25:27.016 [main            ] INFO  StrategyAwardTest      - The following 1 profile is active: "dev"
-25-07-03.21:25:28.422 [main            ] INFO  StrategyAwardTest      - Started StrategyAwardTest in 1.686 seconds (JVM running for 2.249)
-25-07-03.21:25:28.816 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-07-03.21:25:29.040 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-07-03.21:25:29.144 [main            ] INFO  StrategyAwardTest      - queryStrategyAwardDao结果为: [{"awardCount":80000,"awardCountSurplus":79998,"awardId":101,"awardRate":0.3000,"awardTitle":"随机积分","createTime":1702114711000,"id":1,"ruleModels":"tree_luck_award","sort":1,"strategyId":"100001","updateTime":1708900850000},{"awardCount":10000,"awardCountSurplus":9999,"awardId":102,"awardRate":0.2000,"awardTitle":"5次使用","createTime":1702114758000,"id":2,"ruleModels":"tree_luck_award","sort":2,"strategyId":"100001","updateTime":1708900855000},{"awardCount":5000,"awardCountSurplus":4998,"awardId":103,"awardRate":0.2000,"awardTitle":"10次使用","createTime":1702114956000,"id":3,"ruleModels":"tree_luck_award","sort":3,"strategyId":"100001","updateTime":1708900845000},{"awardCount":4000,"awardCountSurplus":3999,"awardId":104,"awardRate":0.1000,"awardTitle":"20次使用","createTime":1702114995000,"id":4,"ruleModels":"tree_luck_award","sort":4,"strategyId":"100001","updateTime":1708900800000},{"awardCount":600,"awardCountSurplus":600,"awardId":105,"awardRate":0.1000,"awardTitle":"增加gpt-4对话模型","createTime":1702115027000,"id":5,"ruleModels":"tree_luck_award","sort":5,"strategyId":"100001","updateTime":1707982933000},{"awardCount":200,"awardCountSurplus":200,"awardId":106,"awardRate":0.0500,"awardTitle":"增加dall-e-2画图模型","createTime":1702115060000,"id":6,"ruleModels":"tree_luck_award","sort":6,"strategyId":"100001","updateTime":1707982934000},{"awardCount":200,"awardCountSurplus":200,"awardId":107,"awardRate":0.0400,"awardSubtitle":"抽奖1次后解锁","awardTitle":"增加dall-e-3画图模型","createTime":1702115138000,"id":7,"ruleModels":"tree_luck_award","sort":7,"strategyId":"100001","updateTime":1707982937000},{"awardCount":199,"awardCountSurplus":199,"awardId":108,"awardRate":0.0099,"awardSubtitle":"抽奖2次后解锁","awardTitle":"增加100次使用","createTime":1702115162000,"id":8,"ruleModels":"tree_luck_award","sort":8,"strategyId":"100001","updateTime":1707982941000},{"awardCount":1,"awardCountSurplus":1,"awardId":109,"awardRate":0.0001,"awardSubtitle":"抽奖6次后解锁","awardTitle":"解锁全部模型","createTime":1702115199000,"id":9,"ruleModels":"tree_luck_award","sort":9,"strategyId":"100001","updateTime":1707982946000},{"awardCount":1,"awardCountSurplus":1,"awardId":101,"awardRate":0.5000,"awardTitle":"随机积分","createTime":1702115199000,"id":10,"ruleModels":"tree_luck_award","sort":1,"strategyId":"100002","updateTime":1707982949000}]
-25-07-03.21:25:29.151 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-07-03.21:25:29.154 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-07-03.21:27:45.700 [main            ] INFO  StrategyAwardTest      - Starting StrategyAwardTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 41372 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-03.21:27:45.701 [main            ] INFO  StrategyAwardTest      - The following 1 profile is active: "dev"
-25-07-03.21:27:47.136 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-25-07-03.21:27:47.142 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-25-07-03.21:27:47.157 [main            ] ERROR SpringApplication      - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 45 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2.CGLIB$sqlSessionFactory$1(<generated>)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2$$FastClassBySpringCGLIB$$6f7e7749.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2.sqlSessionFactory(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 46 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
-	... 59 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
-	... 61 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 65 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 67 common frames omitted
-25-07-03.21:27:47.158 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@673fdbce] to prepare test instance [org.byp.test.infrastructure.StrategyAwardTest@5ba90d8a]
-java.lang.IllegalStateException: Failed to load ApplicationContext
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
-	... 27 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 45 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2.CGLIB$sqlSessionFactory$1(<generated>)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2$$FastClassBySpringCGLIB$$6f7e7749.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e5f54ac2.sqlSessionFactory(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 46 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\30925\Desktop\java_code_study\big-market\big-market-app\target\classes\mybatis\mapper\frame_case_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
-	... 59 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
-	... 61 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'org.byp.infrastructure.persistent.po.A'.  Cause: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
-	... 65 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: org.byp.infrastructure.persistent.po.A
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
-	... 67 common frames omitted
-25-07-03.21:29:27.540 [main            ] INFO  StrategyAwardTest      - Starting StrategyAwardTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 34088 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
-25-07-03.21:29:27.541 [main            ] INFO  StrategyAwardTest      - The following 1 profile is active: "dev"
-25-07-03.21:29:29.034 [main            ] INFO  StrategyAwardTest      - Started StrategyAwardTest in 1.777 seconds (JVM running for 2.317)
-25-07-03.21:29:29.388 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-07-03.21:29:29.608 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-07-03.21:29:29.714 [main            ] INFO  StrategyAwardTest      - queryStrategyAwardDao结果为: [{"awardCount":80000,"awardCountSurplus":79998,"awardId":101,"awardRate":0.3000,"awardTitle":"随机积分","createTime":1702114711000,"id":1,"ruleModels":"tree_luck_award","sort":1,"strategyId":"100001","updateTime":1708900850000},{"awardCount":10000,"awardCountSurplus":9999,"awardId":102,"awardRate":0.2000,"awardTitle":"5次使用","createTime":1702114758000,"id":2,"ruleModels":"tree_luck_award","sort":2,"strategyId":"100001","updateTime":1708900855000},{"awardCount":5000,"awardCountSurplus":4998,"awardId":103,"awardRate":0.2000,"awardTitle":"10次使用","createTime":1702114956000,"id":3,"ruleModels":"tree_luck_award","sort":3,"strategyId":"100001","updateTime":1708900845000},{"awardCount":4000,"awardCountSurplus":3999,"awardId":104,"awardRate":0.1000,"awardTitle":"20次使用","createTime":1702114995000,"id":4,"ruleModels":"tree_luck_award","sort":4,"strategyId":"100001","updateTime":1708900800000},{"awardCount":600,"awardCountSurplus":600,"awardId":105,"awardRate":0.1000,"awardTitle":"增加gpt-4对话模型","createTime":1702115027000,"id":5,"ruleModels":"tree_luck_award","sort":5,"strategyId":"100001","updateTime":1707982933000},{"awardCount":200,"awardCountSurplus":200,"awardId":106,"awardRate":0.0500,"awardTitle":"增加dall-e-2画图模型","createTime":1702115060000,"id":6,"ruleModels":"tree_luck_award","sort":6,"strategyId":"100001","updateTime":1707982934000},{"awardCount":200,"awardCountSurplus":200,"awardId":107,"awardRate":0.0400,"awardSubtitle":"抽奖1次后解锁","awardTitle":"增加dall-e-3画图模型","createTime":1702115138000,"id":7,"ruleModels":"tree_luck_award","sort":7,"strategyId":"100001","updateTime":1707982937000},{"awardCount":199,"awardCountSurplus":199,"awardId":108,"awardRate":0.0099,"awardSubtitle":"抽奖2次后解锁","awardTitle":"增加100次使用","createTime":1702115162000,"id":8,"ruleModels":"tree_luck_award","sort":8,"strategyId":"100001","updateTime":1707982941000},{"awardCount":1,"awardCountSurplus":1,"awardId":109,"awardRate":0.0001,"awardSubtitle":"抽奖6次后解锁","awardTitle":"解锁全部模型","createTime":1702115199000,"id":9,"ruleModels":"tree_luck_award","sort":9,"strategyId":"100001","updateTime":1707982946000},{"awardCount":1,"awardCountSurplus":1,"awardId":101,"awardRate":0.5000,"awardTitle":"随机积分","createTime":1702115199000,"id":10,"ruleModels":"tree_luck_award","sort":1,"strategyId":"100002","updateTime":1707982949000}]
-25-07-03.21:29:29.724 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-07-03.21:29:29.732 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-11.16:46:50.720 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 23216 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
+25-07-11.16:46:50.721 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+25-07-11.16:46:51.397 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.16:46:51.400 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.16:46:51.426 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-11.16:46:52.414 [main            ] INFO  Version                - Redisson 3.45.1
+25-07-11.16:46:52.582 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-07-11.16:46:52.712 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:46:52.728 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:46:53.844 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.481 seconds (JVM running for 6.55)
+25-07-11.16:46:54.300 [main            ] INFO  StrategyArmoryDispatch - key:60:102,103,104,105
+25-07-11.16:46:54.306 [main            ] INFO  StrategyArmoryDispatch - key:1000:105
+25-07-11.16:46:54.308 [main            ] INFO  StrategyArmoryDispatch - key:200:106,107
+25-07-11.16:46:54.310 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果:true
+25-07-11.16:46:54.315 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果0 - 奖品ID值:101
+25-07-11.16:46:54.319 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果1 - 奖品ID值:103
+25-07-11.16:46:54.322 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果2 - 奖品ID值:104
+25-07-11.16:46:54.326 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果3 - 奖品ID值:102
+25-07-11.16:46:54.328 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果4 - 奖品ID值:101
+25-07-11.16:46:54.332 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果5 - 奖品ID值:104
+25-07-11.16:46:54.336 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果6 - 奖品ID值:102
+25-07-11.16:46:54.339 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果7 - 奖品ID值:103
+25-07-11.16:46:54.343 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果8 - 奖品ID值:103
+25-07-11.16:46:54.347 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果9 - 奖品ID值:107
+25-07-11.16:46:54.351 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果10 - 奖品ID值:103
+25-07-11.16:46:54.353 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果11 - 奖品ID值:105
+25-07-11.16:46:54.356 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果12 - 奖品ID值:105
+25-07-11.16:46:54.358 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果13 - 奖品ID值:103
+25-07-11.16:46:54.359 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果14 - 奖品ID值:102
+25-07-11.16:46:54.362 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果15 - 奖品ID值:101
+25-07-11.16:46:54.364 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果16 - 奖品ID值:102
+25-07-11.16:46:54.366 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果17 - 奖品ID值:105
+25-07-11.16:46:54.369 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果18 - 奖品ID值:101
+25-07-11.16:46:54.372 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果19 - 奖品ID值:103
+25-07-11.16:46:54.375 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果20 - 奖品ID值:101
+25-07-11.16:46:54.377 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果21 - 奖品ID值:107
+25-07-11.16:46:54.380 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果22 - 奖品ID值:102
+25-07-11.16:46:54.382 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果23 - 奖品ID值:102
+25-07-11.16:46:54.385 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果24 - 奖品ID值:101
+25-07-11.16:46:54.387 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果25 - 奖品ID值:101
+25-07-11.16:46:54.388 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果26 - 奖品ID值:105
+25-07-11.16:46:54.390 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果27 - 奖品ID值:101
+25-07-11.16:46:54.392 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果28 - 奖品ID值:108
+25-07-11.16:46:54.393 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果29 - 奖品ID值:101
+25-07-11.16:46:54.395 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果30 - 奖品ID值:101
+25-07-11.16:46:54.397 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果31 - 奖品ID值:102
+25-07-11.16:46:54.399 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果32 - 奖品ID值:102
+25-07-11.16:46:54.400 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果33 - 奖品ID值:107
+25-07-11.16:46:54.402 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果34 - 奖品ID值:101
+25-07-11.16:46:54.403 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果35 - 奖品ID值:102
+25-07-11.16:46:54.405 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果36 - 奖品ID值:105
+25-07-11.16:46:54.407 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果37 - 奖品ID值:103
+25-07-11.16:46:54.409 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果38 - 奖品ID值:105
+25-07-11.16:46:54.410 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果39 - 奖品ID值:101
+25-07-11.16:46:54.412 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果40 - 奖品ID值:101
+25-07-11.16:46:54.413 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果41 - 奖品ID值:102
+25-07-11.16:46:54.414 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果42 - 奖品ID值:103
+25-07-11.16:46:54.416 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果43 - 奖品ID值:101
+25-07-11.16:46:54.418 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果44 - 奖品ID值:106
+25-07-11.16:46:54.419 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果45 - 奖品ID值:104
+25-07-11.16:46:54.421 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果46 - 奖品ID值:105
+25-07-11.16:46:54.422 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果47 - 奖品ID值:102
+25-07-11.16:46:54.424 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果48 - 奖品ID值:101
+25-07-11.16:46:54.426 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果49 - 奖品ID值:102
+25-07-11.16:46:54.427 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果50 - 奖品ID值:101
+25-07-11.16:46:54.429 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果51 - 奖品ID值:102
+25-07-11.16:46:54.431 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果52 - 奖品ID值:103
+25-07-11.16:46:54.432 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果53 - 奖品ID值:103
+25-07-11.16:46:54.434 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果54 - 奖品ID值:101
+25-07-11.16:46:54.436 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果55 - 奖品ID值:102
+25-07-11.16:46:54.437 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果56 - 奖品ID值:102
+25-07-11.16:46:54.439 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果57 - 奖品ID值:101
+25-07-11.16:46:54.441 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果58 - 奖品ID值:103
+25-07-11.16:46:54.443 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果59 - 奖品ID值:103
+25-07-11.16:46:54.444 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:101
+25-07-11.16:46:54.446 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果61 - 奖品ID值:103
+25-07-11.16:46:54.447 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果62 - 奖品ID值:106
+25-07-11.16:46:54.448 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果63 - 奖品ID值:103
+25-07-11.16:46:54.450 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果64 - 奖品ID值:101
+25-07-11.16:46:54.451 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果65 - 奖品ID值:103
+25-07-11.16:46:54.452 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果66 - 奖品ID值:102
+25-07-11.16:46:54.454 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果67 - 奖品ID值:103
+25-07-11.16:46:54.455 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果68 - 奖品ID值:101
+25-07-11.16:46:54.457 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果69 - 奖品ID值:101
+25-07-11.16:46:54.458 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果70 - 奖品ID值:103
+25-07-11.16:46:54.459 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果71 - 奖品ID值:102
+25-07-11.16:46:54.460 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果72 - 奖品ID值:102
+25-07-11.16:46:54.462 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果73 - 奖品ID值:102
+25-07-11.16:46:54.463 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果74 - 奖品ID值:104
+25-07-11.16:46:54.464 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果75 - 奖品ID值:101
+25-07-11.16:46:54.466 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果76 - 奖品ID值:102
+25-07-11.16:46:54.467 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果77 - 奖品ID值:101
+25-07-11.16:46:54.468 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果78 - 奖品ID值:101
+25-07-11.16:46:54.470 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果79 - 奖品ID值:102
+25-07-11.16:46:54.471 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果80 - 奖品ID值:101
+25-07-11.16:46:54.472 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果81 - 奖品ID值:107
+25-07-11.16:46:54.474 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果82 - 奖品ID值:103
+25-07-11.16:46:54.475 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果83 - 奖品ID值:101
+25-07-11.16:46:54.477 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果84 - 奖品ID值:102
+25-07-11.16:46:54.478 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果85 - 奖品ID值:104
+25-07-11.16:46:54.479 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果86 - 奖品ID值:107
+25-07-11.16:46:54.482 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果87 - 奖品ID值:106
+25-07-11.16:46:54.483 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果88 - 奖品ID值:104
+25-07-11.16:46:54.485 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果89 - 奖品ID值:101
+25-07-11.16:46:54.486 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果90 - 奖品ID值:103
+25-07-11.16:46:54.488 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果91 - 奖品ID值:102
+25-07-11.16:46:54.490 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果92 - 奖品ID值:101
+25-07-11.16:46:54.491 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果93 - 奖品ID值:102
+25-07-11.16:46:54.493 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果94 - 奖品ID值:107
+25-07-11.16:46:54.494 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果95 - 奖品ID值:101
+25-07-11.16:46:54.495 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果96 - 奖品ID值:103
+25-07-11.16:46:54.497 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果97 - 奖品ID值:101
+25-07-11.16:46:54.498 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果98 - 奖品ID值:103
+25-07-11.16:46:54.500 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果99 - 奖品ID值:101
+25-07-11.16:47:19.719 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 35544 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
+25-07-11.16:47:19.720 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+25-07-11.16:47:20.171 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.16:47:20.173 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.16:47:20.194 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-11.16:47:20.990 [main            ] INFO  Version                - Redisson 3.45.1
+25-07-11.16:47:21.131 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-07-11.16:47:21.240 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:47:21.257 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:47:22.277 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 2.845 seconds (JVM running for 3.456)
+25-07-11.16:47:22.706 [main            ] INFO  StrategyArmoryDispatch - key:60:102,103,104,105
+25-07-11.16:47:22.710 [main            ] INFO  StrategyArmoryDispatch - key:1000:105
+25-07-11.16:47:22.713 [main            ] INFO  StrategyArmoryDispatch - key:200:106,107
+25-07-11.16:47:22.715 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果:true
+25-07-11.16:47:22.722 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.725 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.727 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.729 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.730 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.732 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.734 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.737 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.739 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.740 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.742 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.744 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.745 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.747 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.748 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.750 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.751 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.754 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.755 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.756 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.758 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.760 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.761 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.763 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.764 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.766 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.768 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.769 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.771 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.772 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.774 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.776 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.778 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.780 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.782 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.784 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.787 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.789 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.792 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.794 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.796 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.798 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.800 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.803 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.805 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.807 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.809 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.811 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.813 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.814 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.817 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.820 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.822 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.823 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.825 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.827 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.829 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.831 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.833 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.834 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.837 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.838 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.840 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.841 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.843 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.845 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.846 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.848 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.849 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.851 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.852 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.854 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.855 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.857 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.858 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.860 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.861 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.863 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.864 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.865 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.867 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.868 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.871 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.872 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.874 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.876 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.877 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.878 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.880 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.882 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.883 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.885 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.887 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.888 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.889 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.890 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:47:22.892 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:47:22.894 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.895 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:47:22.897 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:47:22.898 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.900 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.902 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.903 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.905 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.906 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.908 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.909 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.911 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.912 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.914 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.916 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.918 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.921 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.923 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.925 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.927 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.929 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.931 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.934 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.936 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.938 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.941 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.943 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.945 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.947 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.949 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.951 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.952 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.954 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.956 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.958 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.959 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.961 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.962 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.964 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.965 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.967 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.969 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.970 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.971 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.973 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.975 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.976 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.978 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.979 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.981 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.982 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.985 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.987 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.988 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.989 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.991 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.993 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.994 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:22.996 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.997 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:22.998 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.000 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.002 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.003 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.004 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.006 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.007 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.009 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.011 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.012 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.014 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.016 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.017 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.018 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.019 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.020 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.022 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.023 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.024 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.026 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.027 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.028 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.029 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.031 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.033 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.034 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.036 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.038 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.039 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.040 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.042 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.044 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.045 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.046 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.048 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.048 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.049 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.050 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.051 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:47:23.052 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.054 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.055 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:47:23.056 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:38.931 [main            ] INFO  StrategyArmoryDispatchTest - Starting StrategyArmoryDispatchTest using Java 17.0.10 on DESKTOP-MN2IMUQ with PID 5944 (started by 30925 in C:\Users\30925\Desktop\java_code_study\big-market\big-market-app)
+25-07-11.16:48:38.933 [main            ] INFO  StrategyArmoryDispatchTest - The following 1 profile is active: "dev"
+25-07-11.16:48:39.395 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.16:48:39.397 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.16:48:39.425 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-07-11.16:48:40.368 [main            ] INFO  Version                - Redisson 3.45.1
+25-07-11.16:48:40.517 [main            ] WARN  SequentialDnsAddressResolverFactory - DNS TCP fallback on UDP query timeout disabled. Upgrade Netty to 4.1.105 or higher.
+25-07-11.16:48:40.624 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:48:40.641 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.16:48:41.620 [main            ] INFO  StrategyArmoryDispatchTest - Started StrategyArmoryDispatchTest in 3.011 seconds (JVM running for 3.686)
+25-07-11.16:48:41.957 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-11.16:48:42.326 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-11.16:48:42.486 [main            ] INFO  StrategyArmoryDispatch - key:60:102,103,104,105
+25-07-11.16:48:42.490 [main            ] INFO  StrategyArmoryDispatch - key:1000:105
+25-07-11.16:48:42.491 [main            ] INFO  StrategyArmoryDispatch - key:200:106,107
+25-07-11.16:48:42.493 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果:true
+25-07-11.16:48:42.504 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.507 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.509 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.511 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.513 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.515 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.517 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.518 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.521 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.522 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.524 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.525 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.527 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.529 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.532 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.534 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.536 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.538 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.540 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.543 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.545 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.547 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.550 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.552 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.555 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.558 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.561 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.564 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.567 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.569 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.571 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.574 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.576 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.578 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.580 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.583 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.586 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.588 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.589 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.591 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.592 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.594 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.596 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.597 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.599 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.601 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.603 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.604 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.606 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.607 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.610 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.611 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.613 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.614 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.616 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.618 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.619 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.621 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.623 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.624 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.626 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.627 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.628 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.630 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.631 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.633 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.635 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.637 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.639 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.640 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.642 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.643 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.645 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.647 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.649 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.651 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.652 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.654 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.655 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.657 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.658 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.660 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:104
+25-07-11.16:48:42.661 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.663 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.665 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.667 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.669 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.670 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.672 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.673 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.675 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.676 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.677 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.679 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.680 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.682 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.683 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.685 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:105
+25-07-11.16:48:42.687 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:103
+25-07-11.16:48:42.688 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果60 - 奖品ID值:102
+25-07-11.16:48:42.690 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.691 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.692 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.694 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.695 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.696 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.699 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.700 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.702 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.703 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.704 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.706 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.708 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.709 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.712 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.713 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.715 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.717 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.720 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.721 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.724 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.726 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.728 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.729 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.731 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.733 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.735 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.737 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.739 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.740 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.742 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.743 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.745 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.746 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.747 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.749 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.750 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.751 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.753 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.754 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.756 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.757 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.759 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.760 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.761 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.763 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.765 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.766 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.767 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.768 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.770 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.772 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.773 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.774 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.776 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.777 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.779 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.780 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.782 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.784 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.785 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.786 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.788 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.790 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.792 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.793 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.795 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.796 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.798 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.799 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.801 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.802 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.804 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.805 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.807 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.808 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.810 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.811 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.813 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.815 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.817 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.818 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.819 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.820 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.822 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.824 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.825 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.827 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.828 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.830 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.831 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.834 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.835 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.836 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.838 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.839 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.840 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.841 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.842 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:106
+25-07-11.16:48:42.844 [main            ] INFO  StrategyArmoryDispatchTest - 测试结果200 - 奖品ID值:107
+25-07-11.16:48:42.861 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-11.16:48:42.873 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

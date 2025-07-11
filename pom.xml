@@ -104,6 +104,7 @@
                 <artifactId>jjwt</artifactId>
                 <version>0.9.1</version>
             </dependency>
+
             <dependency>
                 <groupId>com.auth0</groupId>
                 <artifactId>java-jwt</artifactId>
@@ -113,6 +114,12 @@
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
                 <version>1.15</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>3.45.1</version>
             </dependency>
 
             <!-- 工程模块 -->

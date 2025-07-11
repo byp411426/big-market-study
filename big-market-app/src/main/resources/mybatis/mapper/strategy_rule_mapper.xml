@@ -29,5 +29,17 @@
         FROM strategy_rule
         limit 10
     </select>
+    <select id="queryStrategyRule" resultType="org.byp.infrastructure.persistent.po.StrategyRule" resultMap="dataMap">
+        SELECT id,
+               strategy_id,
+               award_id,
+               rule_type,
+               rule_model,
+               rule_value,
+               rule_desc
+        FROM strategy_rule
+        WHERE strategy_id = #{strategyId}
+          and rule_model = #{ruleModel}
+    </select>
 
 </mapper>

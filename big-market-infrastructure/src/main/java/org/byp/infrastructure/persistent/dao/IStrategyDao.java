@@ -1,7 +1,9 @@
 package org.byp.infrastructure.persistent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.byp.domain.strategy.model.entity.StrategyEntity;
 import org.byp.infrastructure.persistent.po.Strategy;
+import org.byp.infrastructure.persistent.po.StrategyRule;
 
 import java.util.List;
 
@@ -14,4 +16,8 @@ import java.util.List;
 @Mapper
 public interface IStrategyDao {
     List<Strategy> queryStrategyList();
+
+    Strategy queryStrategyByStrategyId(Long strategyId);
+
+    StrategyRule queryStrategyRule(StrategyRule strategyRuleReq);
 }
